@@ -1,125 +1,104 @@
-/* ====== 1. BASIC RESET ====== */
-/* Sabhi elements ki default margin aur padding hatao */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body ki basic setting */
 body {
-    font-family: 'Poppins', sans-serif; /* Professional font */
-    background-color: #0a0f1e;          /* Dark blue background */
-    color: #e2e8f0;                      /* Light grey text */
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0f1e;
+    color: #e2e8f0;
 }
 
-/* ====== 2. NAVBAR ====== */
-/* Ye menu bar hai jo sabse upar rahega */
 .navbar {
-    background-color: #111827;  /* Dark background */
-    display: flex;              /* Logo aur links ek line mein */
-    justify-content: space-between; /* Logo left, links right */
-    align-items: center;        /* Vertically center */
-    padding: 15px 8%;           /* Andar ki spacing */
-    position: sticky;           /* Scroll karne par bhi upar rahega */
+    background-color: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    position: sticky;
     top: 0;
 }
 
-/* Logo text */
 .logo {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #3b82f6; /* Blue color */
+    color: #3b82f6;
 }
 
-/* Nav links list */
 .nav-links {
-    list-style: none;   /* Bullet points hatao */
-    display: flex;       /* Ek line mein dikhao */
-    gap: 25px;           /* Links ke beech space */
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
-/* Har ek link */
 .nav-links a {
-    color: #94a3b8;         /* Grey color */
-    text-decoration: none;  /* Underline hatao */
+    color: #94a3b8;
+    text-decoration: none;
 }
 
-/* Jab mouse link par jaye */
 .nav-links a:hover {
-    color: #3b82f6; /* Blue ho jaye */
+    color: #3b82f6;
 }
 
-/* ====== 3. HERO SECTION ====== */
-/* Pehla bada section - Left mein text, Right mein photo */
 .hero {
-    display: flex;              /* Text aur image side by side */
-    align-items: center;        /* Vertically center */
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 80px 8%;
-    min-height: 90vh;           /* Screen ki 90% height le */
-    background-color: #0f172a;  /* Thoda alag dark shade */
+    min-height: 90vh;
+    background-color: #0f172a;
 }
 
-/* Left side text area */
 .hero-text {
-    max-width: 500px; /* Text zyada chauda na ho */
+    max-width: 500px;
 }
 
-/* "Hello, I'm" text */
 .hello {
     color: #3b82f6;
     font-size: 1.1rem;
     margin-bottom: 5px;
 }
 
-/* Naam */
 .hero-text h1 {
     font-size: 2.8rem;
     color: white;
     margin-bottom: 10px;
 }
 
-/* "B.Tech CSE Student" */
 .tagline {
     font-size: 1.2rem;
     color: #94a3b8;
     margin-bottom: 15px;
 }
 
-/* Introduction paragraph */
 .intro {
     color: #64748b;
-    line-height: 1.8;       /* Lines ke beech zyada space */
+    line-height: 1.8;
     margin-bottom: 25px;
 }
 
-/* Button */
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #3b82f6;  /* Blue background */
+    background-color: #3b82f6;
     color: white;
     text-decoration: none;
-    border-radius: 5px;         /* Thode gol corners */
+    border-radius: 5px;
 }
 
-/* Button hover effect */
 .btn:hover {
-    background-color: #2563eb;  /* Thoda dark blue */
+    background-color: #2563eb;
 }
 
-/* Right side image */
 .hero-image img {
     width: 280px;
     height: 280px;
-    border-radius: 50%;          /* Gol photo (circle) */
-    object-fit: cover;           /* Photo crop ho, stretch nahi */
-    border: 5px solid #3b82f6;   /* Blue border */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3b82f6;
 }
 
-/* ====== 4. ALL SECTIONS COMMON STYLE ====== */
-/* Har section ki padding same rakho */
 .about,
 .skills,
 .projects,
@@ -128,61 +107,53 @@ body {
     padding: 60px 8%;
 }
 
-/* Har section ka heading */
 .about h2,
 .skills h2,
 .projects h2,
 .education h2,
 .contact h2 {
     font-size: 1.8rem;
-    color: #3b82f6;         /* Blue heading */
+    color: #3b82f6;
     margin-bottom: 20px;
-    text-align: center;      /* Center mein */
+    text-align: center;
 }
 
-/* ====== 5. ABOUT SECTION ====== */
 .about {
-    background-color: #111827; /* Thoda alag background */
+    background-color: #111827;
 }
 
 .about p {
     max-width: 700px;
-    margin: 0 auto;          /* Center align */
+    margin: 0 auto;
     text-align: center;
     color: #94a3b8;
     line-height: 1.8;
 }
 
-/* ====== 6. SKILLS SECTION ====== */
-/* Skills ke boxes ka container */
 .skills-list {
-    display: flex;           /* Ek line mein dikhao */
-    justify-content: center; /* Center mein */
-    gap: 20px;               /* Boxes ke beech space */
-    flex-wrap: wrap;         /* Chhoti screen par niche aa jayein */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-/* Har ek skill box */
 .skill-box {
-    background-color: #1e293b; /* Dark box */
+    background-color: #1e293b;
     padding: 20px 40px;
-    border-radius: 10px;       /* Gol corners */
-    border: 1px solid #334155; /* Halka border */
+    border-radius: 10px;
+    border: 1px solid #334155;
     text-align: center;
     font-weight: 600;
 }
 
-/* Skill box hover */
 .skill-box:hover {
-    border-color: #3b82f6;     /* Blue border on hover */
+    border-color: #3b82f6;
 }
 
-/* ====== 7. PROJECTS SECTION ====== */
 .projects {
     background-color: #111827;
 }
 
-/* Projects ke cards ka container */
 .project-list {
     display: flex;
     justify-content: center;
@@ -190,13 +161,12 @@ body {
     flex-wrap: wrap;
 }
 
-/* Har project card */
 .project-card {
     background-color: #1e293b;
     padding: 30px;
     border-radius: 10px;
-    width: 300px;                   /* Fixed width */
-    border-top: 4px solid #3b82f6; /* Upar blue line */
+    width: 300px;
+    border-top: 4px solid #3b82f6;
 }
 
 .project-card h3 {
@@ -209,15 +179,14 @@ body {
     line-height: 1.6;
 }
 
-/* ====== 8. EDUCATION SECTION ====== */
 .edu-card {
     max-width: 500px;
-    margin: 0 auto;           /* Center mein */
+    margin: 0 auto;
     background-color: #1e293b;
     padding: 25px;
     border-radius: 10px;
     text-align: center;
-    border-left: 4px solid #3b82f6; /* Left mein blue line */
+    border-left: 4px solid #3b82f6;
 }
 
 .edu-card h3 {
@@ -229,7 +198,6 @@ body {
     color: #94a3b8;
 }
 
-/* ====== 9. CONTACT SECTION ====== */
 .contact {
     background-color: #111827;
     text-align: center;
@@ -240,7 +208,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* ====== 10. FOOTER ====== */
 footer {
     text-align: center;
     padding: 20px;
